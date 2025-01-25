@@ -1,0 +1,704 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: inter;
+  }
+  
+  .mains {
+    display: flex;
+  }
+  
+  
+  .Section {
+    max-width: 296px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #14171f;
+    padding: 24px 0;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 48px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .navSection {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navSection {
+      display: none;
+    }
+  }
+  
+  .navContainer {
+    max-width: 248px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+  
+  .omoskilloLogo {
+    padding: 0 16px 16px 16px;
+    border-bottom: 1px solid #3d414b;
+  }
+  
+  .studentDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    width: 100%;
+    border-top: 1px solid #7d70bd;
+    border-bottom: 1px solid #7d70bd;
+  }
+  
+  .student {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .studentContent {
+    display: flex;
+    flex-direction: column;
+    color: #929699;
+    font-size: 14px;
+  }
+  
+  .nameAndrio {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .navDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .offers {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #929699;
+    font-size: 16px;
+  }
+  
+  .settingsDiv {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px 0;
+    border-top: 1px solid #3d414b;
+    border-bottom: 1px solid #3d414b;
+  }
+  
+  .settingsButton {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #7b62ff;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 24px;
+    background: none;
+    border-radius: 8px;
+    border: 1px solid #7b62ff;
+    max-width: 248px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  
+  
+  .mainContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 61px;
+    padding: 0 32px;
+  }
+  
+  .mainWidthDiv {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    width: 100%;
+    gap: 24px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    width: 100%;
+    gap: 24px;
+  }
+  
+  
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mainWidthDiv {
+      padding: 32px 0;
+    }
+  }
+  
+  .mainNavDiv {
+    display: flex;
+    padding: 16px 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .mainNavLeft {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    max-width: 311px;
+    width: 100%;
+  }
+  
+  .bar {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .bar {
+      display: inline-block;
+    }
+  }
+  
+  .mainNavUl {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+    color: #2f2f2f;
+    font-size: 14px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mainNavUl {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mainNavUl {
+      font-size: 12px;
+    }
+  }
+  
+  .bellDiv {
+    display: flex;
+    gap: 15px;
+    max-width: 336px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .teacherButton {
+    padding: 8px 12px;
+    border-radius: 50px;
+    border: 1px solid #c7c7c7;
+    background: #f7f7f7;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .teacherButton {
+      font-size: 8px;
+      max-width: 120px;
+      width: 100%;
+      padding: 7px 8px;
+    }
+  }
+  
+  .backgroundDiv {
+    background: lightgray 100% / cover no-repeat;
+    background-image: url("./images/image\ 2\ \(2\).png");
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    padding: 66px 0 66px 40px;
+  }
+  
+  .BackgroundText {
+    color: #2f2f2f;
+    font-size: 40px;
+    max-width: 416px;
+    width: 100%;
+    font-weight: 600;    line-height: 48px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .BackgroundText {
+      font-size: 24px;
+    }
+  }
+  
+  .buttonsDiv {
+    display: flex;
+    max-width: 1080px;
+    width: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .buttons {
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px solid #c7c7c7;
+    color: #2f2f2f;
+    background: none;
+    background-position: center;
+  }
+  
+  .blackButton {
+    border: 1px solid #3d414b;
+    background: #14171f;
+    color: #fff;
+  }
+  
+  .allInfoSection {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .allInfoSection {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .allInfoSection {
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
+  }
+  
+  .personalInfoDiv {
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    flex-direction: column;
+  }
+  
+  .personalInfoFirst {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid #c7c7c7;
+    align-items: flex-end;
+  }
+  
+  .infoFirstHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .infoFirstContant {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+    color: #14171f;
+  }
+  
+  .infoFirstP {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .formsDiv {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    color: #2f2f2f;
+    flex-wrap: wrap;
+  }
+  
+  .eachForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    max-width: 328px;
+    width: 100%;
+  }
+  
+  .infoFirstForm {
+    width: 100%;
+  }
+  
+  .text {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #c7c7c7;
+    background: #f9fbfc;
+    width: 100%;
+    max-width: 327px;
+    width: 100%;
+  }
+  
+  .dateinput {
+    background-image: url(/images/date.svg);
+    background-position: center right 16px;
+    background-repeat: no-repeat;
+  }
+  
+  .purpleInput {
+    border-radius: 8px;
+    border: 1px solid #7b62ff;
+    background: #e6e1ff;
+    box-shadow: 0px 4px 4px 0px rgba(123, 98, 255, 0.25);
+  }
+  
+  .numStart {
+    border-radius: 8px;
+    border: 1px solid #c7c7c7;
+    background: #14171f;
+    padding: 12px 16px;
+  }
+  
+  .Phonenumber {
+    display: flex;
+    gap: 8px;
+    color: #fff;
+  }
+  
+  .saveButton {
+    border-radius: 8px;
+    background: #7f56d9;
+    padding: 10px 24px;
+    color: #fff;
+    border: none;
+  }
+  
+  .personalInfoSecond {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .personalInfoSecond {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  
+  .persInfoContainer {
+    display: flex;
+    max-width: 432px;
+    width: 100%;
+    padding: 24px 16px;
+    border-radius: 16px;
+    border: 1px solid #c7c7c7;
+    flex-direction: column;
+    gap: 16px;
+    color: #14171f;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .persInfoContainer {
+      width: 100%;
+      max-width: unset;
+    }
+  }
+  
+  .infoSecondContent {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 12px;
+    background: #f9fbfc;
+  }
+  
+  .editDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .editDiv {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  
+  .editContent {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .editText {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .editTextP {
+    color: #14171f;
+    font-size: 16px;
+  }
+  
+  .AdditionalInfoDiv {
+    display: flex;
+    padding: 24px 16px;
+    max-width: 246px;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid #c7c7c7;
+    color: #14171f;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .AdditionalInfoDiv {
+      width: 100%;
+      max-width: unset;
+    }
+  }
+  
+  .addInfoContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addInfoForm {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .resume {
+    border-radius: 8px;
+    border: 1px solid #c7c7c7;
+    background: #f9fbfc;
+    padding: 12px 16px;
+  }
+  
+  .selectDiv {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .selectAddLinks {
+    padding: 12px 0 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #c7c7c7;
+    background: #f9fbfc;
+    width: 122px;
+    color: #666;
+  }
+  
+  .selectDiv {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .http {
+    padding: 12px 16px;
+    width: 57px;
+    border-radius: 8px;
+    border: 1px solid #c7c7c7;
+    background: #f9fbfc;
+  }
+  
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #14171f;
+    max-width: 341px;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .allABoutContainer {
+      width: 100%;
+      max-width: unset;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .allABoutContainer {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+  .andrioInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: #fff;
+  }
+  
+  .attachInfo {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .editorsDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .uploadImg {
+    background-image: url("./images/Screenshots\,\ Camera\,Photo.png"), url("./images/Rectangle\ 4.png");
+    background-repeat: no-repeat;
+    width: 128px;
+    background-position: center;
+    height: 126px;
+  }
+  
+  .locationContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    width: 100%;
+    border-radius: 12px;
+    background: #fff;
+  }
+  
+  .locationDiv {
+    display: flex;
+    justify-content: space-between;
+    color: #2f2f2f;
+    font-size: 16px;
+  }
+  
+  .location {
+    display: flex;
+    padding: 12px 12px 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #c7c7c7;
+    background: #f9fbfc;
+    background-image: url(/images/arrowDown.svg);
+    background-position: center right 16px;
+    background-repeat: no-repeat;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .optionThree {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Oslon {
+    display: flex;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #d2f0ff;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .whiteoslon {
+    border-radius: 8px;
+    background: none;
+  }
+  
+  .aboutDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .aboutcontent {
+    display: flex;
+    justify-content: space-between;
+    color: #2F2F2F;
+    font-size: 16px;
+  }
+  
+  .words {
+    color: #2F2F2F;
+    font-size: 14px;
+  }
+  
+  .aboutText {
+  border-radius: 8px;
+  border: 1px solid #C7C7C7;
+  padding: 12px 16px;
+  color: #666;
+  font-size: 14px;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
